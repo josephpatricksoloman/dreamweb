@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>DAY ATM.</title>
+	<style>
+
+
+body{
+	overflow-x:hidden;
+    }
+	
+.navbutton{
+	margin-left:20px;
+	width:160px;
+	
+    }
+	
+.jumbotron{
+	padding:50px 0 100px 0;
+	background-color:#F8F9FB;
+     }
+	 
+.lead{
+	padding-top:50px;
+   }
+   
+.btn{
+	border-radius:35px;
+	}
+	
+.btn-dark{
+	margin-top:40px;
+	}
+	
+.sublogo{
+	filter: grayscale(100%);
+		width:150px;
+	height:100px;
+	}
+	
+.sublogo:hover{
+	filter: grayscale(0%);
+
+	}
+	
+h4{
+	margin:20px 120px 20px 0;
+	}
+	
+	.jumbotron1{
+	margin-top:50px;
+	}
+	
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position:relative;
+  top:-250px;
+  left:5%;
+  margin-right:20px;
+  
+}
+
+ .next {
+  cursor: pointer;
+  position:relative;
+  top:-250px;
+  left:85%;
+  margin-right:20px;
+  
+}
+
+
+
+/* Fading animation */
+.fades {
+  -webkit-animation-name: fades;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fades;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fades {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fades {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.slidepic{
+    width:300px;
+   height:300px;
+   border-radius:50%;
+}
+
+.author{
+   width:50%;
+  position:absolute;
+  right:100px;
+  }
+  
+.authorcontent{
+     bottom:100px;
+     color:gray;
+}
+  
+  
+.authorname{
+  bottom:50px;
+  }
+
+.authorjob{
+        bottom:10px;
+       color:gray;
+}
+
+.subscribe{
+       margin:100px 50px 0 50px;
+       background-color:#7d1d2e;
+       border-radius:200px;
+}
+.segment-two ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.segment-two ul li
+{
+	line-height: 35px;
+}
+.md-mb-30{
+		margin-bottom: 30px;
+	}
+	.footer-para-style
+{
+	color: #999;
+	line-height: 25px;
+}
+.footer-top
+{
+   margin:100px 0 0 0;
+	background:#1B2E3D;
+	color:white;
+}
+.fab{
+     margin-left:20px;
+     color:white;
+}
+
+.footer-bottom-text
+{
+	text-align: center;
+	background:#101E2A;
+	line-height: 75px;
+	color:white;
+	font-size: 14px;
+}
+
+.browsejobs{
+		padding:10px;
+}
+
+.browsejobs:hover{
+		transition:2s;
+		color:white;
+		background-color:#5C0000;
+         cursor: pointer;
+         box-shadow: 5px 5px 30px #D3D6DB;
+         }
+.gold{color:#FFDA55;}
+#myDIV{
+      display:none;
+      }
+.signIn{
+      background-color:#1C2333;
+      color:white;
+      width:150px;
+      position:relative;
+      top:-52px;
+      left:145px;
+     }
+	 
+	
+@media only screen and (max-width: 800px) {
+  .sublogo {
+   width:100px;
+   height:50px;
+  }
+}	 
+	</style>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+	<img src="logo.png">
+	</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="font-size: 15px;" class="nav-link active" aria-current="page" href="dayatm.html">DAY ATM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourprod.html" style="padding-left:px;">OUR PRODUCTS</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="Services.html"  style="padding-left:px;">OUR SERVICES</a>
+        </li>
+		<li>
+		<a class="nav-link" href="buisopp.html"  style="padding-left:px;">BUSINESS OPPORTUNITY</a>
+		</li>
+		 <li class="nav-item">
+          <a class="nav-link" href="careers.html"  style="padding-left:px;">CAREERS</a>
+        </li>
+		<li>
+		<a class="nav-link" href="privacy.html"  style="padding-left:px;">POLICY</a>
+		</li>
+		 <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </li>
+      </ul>
+      
+        <button class="btn btn-outline-primary navbutton" type="submit">Sign in</button>
+        <button class="btn btn-primary navbutton" type="submit">Free Consultant</button>
+
+     
+    </div>
+  </div>
+</nav>
+
+<!---- carousal--->
+
+<div class="slideshow-container">
+
+<div class="mySlides fades">
+ <img src="curo1.png" width="100%">
+ 
+</div>
+
+<div class="mySlides fades">
+<img src="curo2.png" width="100%">
+</div>
+
+<div class="mySlides fades">
+ <img src="curo3.png" width="100%">
+</div>
+
+<div class="mySlides fades">
+ <img src="curo4.png" width="100%">
+</div>
+
+<div class="mySlides fades">
+  <img src="curo5.png" width="100%">
+</div>
+
+<img class="prev" onclick="plusSlides(-1)" src="prev.png">
+<img class="next" onclick="plusSlides(1)"src="next.png">
+
+</div>
+
+<!-- end of curousal----->
+<!--about us------>
+
+<div class="jumbotron">
+<div class="container">
+ <img style="float:right" height="400px" src="fylebg.png">
+  <h2 style="font-weight:700;"> <b>ABOUT US </b> </h2>
+  <p class="lead" style="font-size:15px; text-align:justify;"><b>We wish to introduce ourselves as DAY ATM a business entity which has ventured into the field of Payment Services and forayed into deployment of White label ATM machines (WLAs) and Android based mPOS - mini ATM cum card swipe machines distribution as well.
+We have chosen to explore the highly innovative and value driven business of White Label ATM Machine deployment and distribution of mPOS mini ATM Swipe Machines in our own brand name ‘NPays’, as we could see the surge in banking cum financial transactions through these modes in the years to come. We wish to lead the market and are destined to be the top payment services solutions provider. We are the pioneers and the first in India to introduce mini ATM based kiosks which has the functions of Cash withdrawal and Cash deposits under our brand name ‘Day ATM’.
+We are headquartered at Chennai and are working towards creating a micro level networked infrastructure for the deployment of WLAs, Day ATM Kiosks and mPOS devices to every nook and corner, irrespective of whether it is Urban part or a Rural part of India. We are striving hard with our workforce to establish a brand name in this field and carve a niche for ourselves.  
+Our goal is to support customers and provide fillip with reference to accessible Payment Services beyond Tier I and Tier II cities by deployment of these machines at every possible level. These ‘under-served areas’ viz., rural areas and villages where banking and financial services are ‘out of reach’ have a huge potential for monetary transactions through digital payment. We also wish to utilise our franchise model to market banking products including CASA, loans and other financial products of banks and financial institutions.
+Even as we are taking our baby steps as a beginner in this sector, we have well devised plans to penetrate this highly potential market and are poised to grow leaps and bounds and evolve as a well-known brand. Our vision is to make use of the untapped potential and is aimed at providing one stop solutions for the public at large. We have rightly captioned our motive as ‘Digital Unite’ since we have planned the following segments under different verticals:
+• Cash deposit and withdrawals
+• AEPS, UPI and QR code based payments
+• All types of card swipe facility
+• Utility bill payments, travel & movie ticket bookings
+• Banking products viz., CASA opening, Loans
+• Facilitator services with reference to banks’ and private sector financiers’ asset products
+• Collections of loans and financial products both through the machines and as nodal points
+We are riding on the RBI’s initiative of digital payment drive and hope to be an umbrella providing hassle free financial bouquet and grow along with the our franchisee, banker, financier and customer which will help us in our motto – together we grow.</p>
+  <a class="btn btn-dark btn-lg" href="#" role="button">know more</a>
+ 
+</div>
+</div>
+<!--end about us------>
+<!--corporate social responsiblity------>
+<div class="jumbotron">
+<div class="container">
+ <img style="float:right" height="400px" src="floatimg.png">
+  <h2 style="font-weight:700; text-align:justify;"> <b>SOCIAL CORPORTATE RESPONSIBLITY </b> </h2>
+  <p class="lead" style="font-size:15px; text-align:justify;"><b style="font-weight: bold;">“It takes 20 years to build a reputation and only 5 min to ruin it”- Warren Buffet</b>
+Business should not only be responsible morally to the stake holders but also to the society , environment and to a sustainable society.<br>
+Our CSR policy is a commitment to behave ethically and to contribute to the economic development of the quality of life of the workforce and their families and their local communities and to the society in a larger way.
+
+			<b style="font-weight: bold;">	DAY ATM</b><br> 
+			<b style="font-weight: bold;">Policy objective:</b><br>
+DAY ATM is committed to conduct its business in a socially responsible, ethical and environment friendly manner and to continuously work towards improving quality of life of the communities in its operational areas. <br>
+
+			        <b style="font-weight: bold;"> CSR PHILOSOPHY</b> <br>
+        We believe, that <br>
+o	we can positively impact and contribute to the realization of integrated and inclusive development of the country, in partnership with National Government, and other local, national and international partners; <br>
+o	sustainable development of our businesses is dependent on long lasting and mutually beneficial relationships with our stakeholders, especially the communities we work with; <br>
+o	partnerships with government, corporate and civil society/community institutions, offer a strong multiplier for complementing efforts, resources and to building sustainable solutions. <br>
+o	our employees have the potential to contribute not just to our business, but also towards building strong communities.<br>
+
+			<b style="font-weight: bold;">COMMUNICATION:</b><br>
+We will voluntarily communicate the results of our social programs to our stakeholders on a periodic basis.<br>
+			<b style="font-weight: bold;">CSR ACTIVITIES AT DAY ATM:</b><br>
+1.	Support towards cleaning of ponds, irrigation channels<br>
+2.	Water Harvesting Structures<br>
+3.	Community Afforestation & Bio-diversity<br></p>
+  <a class="btn btn-dark btn-lg" href="#" role="button">know more</a>
+
+
+<!--end corporate social responsiblity------------>
+
+<!--carriers------------>
+<div class="jumbotron">
+<div class="container">
+ <img style="float:left" height="400px" src="fylebg.png">
+  <h2 style="font-weight:700;"> <b>CAREERS </b> </h2>
+  <p class="lead" style="font-size:15px; text-align:justify;"><b  style="font-weight: bold;">Recruitment Philosophy:</b>
+
+A large number of fresher’s are recruited and provided with accelerated career opportunities. In order to induce global practices in our systems we systematically hire professionals for our operations.
+Our mentoring initiatives help in providing support to new employees as well as ensuring a smooth transition into our processes and systems.
+			<br><br><b  style="font-weight: bold;">Nurturing Talent:</b>
+
+We have unique and well demonstrated track record of providing career opportunities by predominately hiring fresher’s and grooming them to take leadership roles. Employees with a performance track record and high potential are identified through a well structured and transparent development process.
+
+<br><br><b  style="font-weight: bold;">Quality of Life:</b>
+
+All our operations have committees with cross-functional members who organize a variety of socio-cultural activities.</p>
+  <a class="btn btn-dark btn-lg" href="#" role="button">know more</a>
+ 
+</div>
+</div>
+
+<!--end carriers------------------>
+
+<!--WHY US------------------>
+<div class="jumbotron">
+<div class="container">
+ <img style="float:right" height="400px" src="fylebg.png">
+  <h2 style="font-weight:700;"> <b>WHY US </b> </h2>
+  <p class="lead" style="font-size:15px; text-align:justify;"><b>We believe that our success is due to the commitment, passion and contribution of our employees.
+This is why we are committed to providing our employees with a supportive, rewarding and safe work environment with a high degree of engagement and empowerment, enabling them to realize their full potential.
+At DAY ATM, we offer employees much more than just a job - we strive to give them a career.
+They are among the most creative, forward-thinking people in today's business world, coming from a wide range of cultural, educational backgrounds.
+We even encourage our employees to move across Group companies to gain a rich and varied experience.</p>
+  <a class="btn btn-dark btn-lg" href="#" role="button">know more</a>
+ 
+</div>
+</div>
+
+<!--end WHY US------------------>
+<!--terms & condition------------------>
+<div class="jumbotron">
+<div class="container">
+  <h2 style="font-weight:700;"><a href="privacy.html"> <b class="lead" style="font-size:25px; font-weight:400; text-align:center; margin-left:px;  ">TERMS & CONDITIONS APPLY*</b></a> </h2>
+  <p class="lead" style="font-size:15px; text-align:justify;">
+ 
+</div>
+</div>
+
+<!--end terms & conditions------------------>
+
+
+
+<!--sopitify------>
+<div class="container overflow-hidden" style="position:relative;top:-50px;background-color:white;border-radius:20px;">
+
+<div class="row gx-5">
+    <div class="col">
+     <a href="https://www.google.com/" ><img class="sublogo"  src="google.png" ></a>
+    </div>
+    <div class="col">
+       <img class="sublogo" src="microsoft.png" >
+    </div>
+	 <div class="col">
+       <img class="sublogo" src="netflix.png">
+    </div>
+	 <div class="col">
+       <img class="sublogo" src="sportify.png">
+    </div>
+	 <div class="col">
+       <img class="sublogo" src="gtel.png">
+    </div>
+	
+  </div>
+</div>
+<!---end-sportify--->
+<!---email box--->
+
+
+<div class="jumbotron subscribe">
+<div class="container">
+<h2 class="text-center" style="color:white;">Subscribe to Our Newsletter for the Weekly Updates.</h2>
+<form class="needs-validation" method="POST" novalidate>
+<div class="mx-auto d-block" style="width:440px;margin:15px;">
+ 
+                <input type="text" style="border-radius:50px;"  placeholder="Enter your email address here" required class=" form-control" />
+                <div class="invalid-feedback">Please enter the email</div>
+            </div>
+            <button type="submit" name="submit"  onclick="return Validate()" class="mx-auto d-block btn signIn"> Sign In</button>
+			
+</form>
+</div>
+</div>
+<!---end email box--->
+
+<!-------------------------------------------------------FOOTER---------------------------------------------------->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+				
+			
+				
+					<div class="col-md-2 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+					<div><img src="logo.png" height="50px" width="50px"></div>
+						<h4>Categories</h4>
+						<ul>
+							<li>about </li>
+							<li>products</li>
+							<li>organization structure</li>
+							<li>our team</li>
+							<li>gallery</li>
+							<li>privacy policy</li>
+						</ul>
+					</div>
+					
+					<div class="col-md-2 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30"><br><br>
+						<h4>Resource</h4>
+						<ul>
+							<li>Contact & Support</li>
+							<li> Application </li>
+							<li>  FAQ </li>
+							<li>Careers</li>
+							
+						</ul>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30"><br><br>
+						<h4>what we do </h4>
+						<ul>
+							<li>financial advices</li>
+							<li> planing statergy</li>
+							<li>  investment trending</li>
+							<li> wealth commitments</li>
+							<li>  our products</li>
+							<li> states element</li>
+							
+							
+						</ul>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30"><br><br>
+						<h4>Legals</h4>
+						<ul>
+							<li>Copyright   </li>
+							<li> Privacy Policy</li>
+							<li>  Disclaimer </li>
+							<li>Terms</li>
+							
+						</ul>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 sm-mb-30"><br><br>
+						<h2  style="margin:20px 120px 20px 0;" class="gold">DAY ATM</h2>
+						
+						<p class="footer-para-style">Day ATM is always accelerating the speed of organization growth.<br> Now, we are providing white label ATM machines within PAN India, <br>Soon we will move our business to International market.</p>
+							<a href=""  target="_blank" ><i class="fab fa-twitter"></i></a>
+							<a href="" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+							<a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<p class="footer-bottom-text">Copyright © 2021 joseph patrick. All rights reserved.</p>
+	</footer>
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  var y = document.getElementById("buttonname");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+	y.innerHTML="Hide All Categories";
+  } else {
+    x.style.display = "none";
+	y.innerHTML="See All Categories";
+  }
+}
+
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+
+        
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+ 
+  slides[slideIndex-1].style.display = "block";  
+
+}
+</script>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
